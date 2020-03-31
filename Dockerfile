@@ -11,3 +11,5 @@ RUN git clone https://github.com/broadinstitute/TOPMed_AFib_pipeline.git && cd .
 RUN wget http://people.virginia.edu/~wc9c/KING/Linux-king.tar.gz && \
     tar -xzvf Linux-king.tar.gz && \
     cp king /bin/king
+
+### gogogo

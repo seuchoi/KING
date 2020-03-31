@@ -1,1 +1,2 @@
 # KING
+## Genetic relationship matrix 
