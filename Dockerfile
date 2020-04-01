@@ -14,5 +14,3 @@ RUN git clone https://github.com/seuchoi/KING.git && cd ./KING && git pull origi
 RUN wget http://people.virginia.edu/~wc9c/KING/Linux-king.tar.gz && \
     tar -xzvf Linux-king.tar.gz && \
     cp king /bin/king
-
-### gogogo
