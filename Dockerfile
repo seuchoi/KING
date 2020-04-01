@@ -1,5 +1,4 @@
-# Base Image
-FROM avelior/plink2:latest
+from avelior/plink2:latest
 
 # Maintainer
 MAINTAINER Seung Hoan Choi <seuchoi@gmail.com>
