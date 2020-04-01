@@ -18,7 +18,7 @@ RUN wget http://people.virginia.edu/~wc9c/KING/Linux-king.tar.gz && \
 # Install PLINK
 RUN wget http://s3.amazonaws.com/plink2-assets/plink2_linux_x86_64_20200328.zip && \
     unzip -o plink2_linux_x86_64_20200328.zip && \
-    cp plink2 /bin/plink2 && \
+    cp plink2 /bin/plink2
 
 # install some R rpackages
 RUN Rscript --vanilla /KING/install.R
