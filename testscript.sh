@@ -19,7 +19,7 @@ king -b ${bed} --kinship --cpus ${cpus} --prefix ${out_base}  > ${out_base}.out
 ##### filter kinship file
 awk '($8>=0.0442){print $0}' ${out_base}.kin0 > ${out_base}.kin0.related
 
-R CMD BATCH "--args ${out_base}" unrelated_third_degree.R > unrelated_third_degree.out
+R CMD BATCH "--args ${out_base}" /KING/unrelated_third_degree.R unrelated_third_degree.out
 
 gzip -c ${out_base}.kin > ${out_base}.kin.gz
 gzip -c ${out_base}.kin0 > ${out_base}.kin0.gz
