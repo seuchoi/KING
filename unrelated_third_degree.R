@@ -11,7 +11,7 @@ source("/KING/removerelated.R")
 library(data.table)
 ######
 ###### read files
-related<-fread(relatedfile,header=T,data.table=F,sep="\t")
+related<-fread(relfile,header=T,data.table=F,sep="\t")
 famid<-fread(famfile,header=F,data.table=F,sep="\t")
 relsampes<-related[,c("ID1","ID2")]
 allsam<-famid$V1

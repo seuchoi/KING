@@ -1,4 +1,4 @@
-cd exdata/
+cd /KING/exdata/
 ###
 ####set up the envernmental variables
 out_base=ALL.chr22
