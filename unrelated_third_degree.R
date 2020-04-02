@@ -25,28 +25,3 @@ print(paste("Comuptational time of",round(difftime[[1]],digits=2)))
 ###### quit R
 sessionInfo()
 quit("no")
-
-
-
-
-
-##### call library
-library(SeqArray)
-
-##### call arguments
-args <- commandArgs(trailingOnly=T)
-vcf <- args[1]
-gds_out <- paste(args[2],".gds",sep="")
-ncpu <- as.numeric(args[3])
-
-##### convert vcf to gds
-seqVCF2GDS(vcf, gds_out, storage.option="LZMA_RA", parallel=ncpu, verbose=TRUE)
-
-##### complete conversion
-end_time <- Sys.time()
-difftime<-end_time - start_time
-print(paste("Comuptational time of",round(difftime[[1]],digits=2),"secs"))
-
-###### quit R
-sessionInfo()
-quit("no")
