@@ -57,7 +57,6 @@ workflow king {
 		    }
 
 
-
 	output {
 		File kinship1 = kin2unrelated.kinship1
 		File kinship2 = kin2unrelated.kinship2
