@@ -1,7 +1,7 @@
 from r-base:3.6.3
 
 
-# Maintainer
+## Maintainer
 MAINTAINER Seung Hoan Choi <seuchoi@gmail.com>
 
 RUN apt-get update
