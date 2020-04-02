@@ -7,7 +7,7 @@ relfile<-paste0(fileheader,".kin0.related")
 famfile<-paste0(fileheader,".fam")
 unrelfile<-paste0(fileheader,".kin0.unrelated3d.tsv")
 
-source("removerelated.R")
+source("/KING/removerelated.R")
 library(data.table)
 ######
 ###### read files
