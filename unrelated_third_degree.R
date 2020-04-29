@@ -12,7 +12,7 @@ library(data.table)
 ######
 ###### read files
 related<-fread(relfile,header=T,data.table=F,sep="\t")
-famid<-fread(famfile,header=F,data.table=F,sep="\t")
+famid<-fread(famfile,header=F,data.table=F,sep=" ")
 relsampes<-related[,c("ID1","ID2")]
 allsam<-famid$V1
 newidskept<-removerelated(relsampes,allsam,random=FALSE)
